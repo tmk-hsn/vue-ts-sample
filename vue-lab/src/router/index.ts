@@ -22,6 +22,11 @@ const routes = [
     path: '/table',
     name: 'Table',
     component: () => import(/* webpackChunkName: "table" */ '../views/Table.vue')
+  },
+  {
+    path: '/form',
+    name: 'Form',
+    component: () => import(/* webpackChunkName: "form" */ '../views/Form.vue')
   }
 ]
 

@@ -12,6 +12,9 @@
           <el-menu-item>
             <router-link to="/table">Table</router-link>
           </el-menu-item>
+          <el-menu-item>
+            <router-link to="/form">Form</router-link>
+          </el-menu-item>
         </el-menu>
       </el-aside>
       <el-main>
