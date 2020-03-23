@@ -61,4 +61,4 @@ typings/
 .next
 
 # dist directory
-dist/node_modules
+vue-ssr/node_modules
