@@ -1,0 +1,8 @@
+{
+  "watch": ["src"],
+  "ext": "ts",
+  // テストファイル等、リロード対象にしたくない物があればここに追加
+  "ignore": ["tests/**/*.ts"],
+  // 実際に実行するコマンド。先程のts-nodeのコマンドです。
+  "exec": "npm run ts-node ./src/index.ts"
+}

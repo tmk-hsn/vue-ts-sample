@@ -32,6 +32,16 @@ const routes = [
     path: '/translator',
     name: 'Translator',
     component: () => import(/* webpackChunkName: "translator" */ '../views/Translator.vue')
+  },
+  {
+    path: '/counter',
+    name: 'Counter',
+    component: () => import(/* webpackChunkName: "counter" */ '../views/Counter.vue')
+  },
+  {
+    path: '/weather',
+    name: 'Weather',
+    component: () => import(/* webpackChunkName: "weather" */ '../views/Weather.vue')
   }
 ]
 

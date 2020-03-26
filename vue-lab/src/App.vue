@@ -18,6 +18,12 @@
           <el-menu-item>
             <router-link to="/translator">Translator</router-link>
           </el-menu-item>
+          <el-menu-item>
+            <router-link to="/counter">Counter</router-link>
+          </el-menu-item>
+          <el-menu-item>
+            <router-link to="/weather">Weather</router-link>
+          </el-menu-item>
         </el-menu>
       </el-aside>
       <el-main>

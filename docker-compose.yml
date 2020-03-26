@@ -8,4 +8,27 @@ services:
     volumes:
       - ".:/projects"
     tty: true
+  node:
+    build: ./vue-ssr
+    tty: true
+    volumes:
+      - .:/work
+    working_dir: /work
+
+  db:
+    image: mysql:5.6
+    volumes:
+      - db-store:/var/lib/mysql
+      - ./docker/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+    environment:
+      - MYSQL_DATABASE=typescript
+      - MYSQL_USER=docker
+      - MYSQL_PASSWORD=secret
+      - MYSQL_ROOT_PASSWORD=secret
+      - TZ=Asia/Tokyo
+    ports:
+      - 13306:3306
+
+volumes:
+  db-store:
 
